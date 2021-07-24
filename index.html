@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+    <title>Let us cook something</title>
+</head>
+<body>  
+
+    <div class="topnav" id="myTopnav"> 
+        <a href="index.html">EDAMAM FINDER</a>
+        <a href="index.html" class="topright">Home</a>
+        <a href="https://www.edamam.com/about/company.jsp" class="topright" >About EDAMAM</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+    </div>
+
+    <div class="sidenav">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
+            Diet
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Balanced</a>
+            <a class="dropdown-item" href="#">High Fiber</a>
+            <a class="dropdown-item" href="#">High Protien</a>
+            <label for="">Low-Carb<input class="dropdown-item" type="checkbox" name="" id=""></label>
+          </div>
+        <a href="#services">Services</a>
+        <a href="#clients">Clients</a>
+        <a href="#contact">Contact</a>
+        <ul style="list-style-type: none;">
+          <div>Meal</div> 
+          <li><label for=""><input type="radio" name="" id="">Breakfast</label></li>
+          <li><label for=""><input type="radio" name="" id="">Lunch</label></li>
+          <li><label for=""><input type="radio" name="" id="">Dinner</label></li>
+          <li><label for=""><input type="radio" name="" id="">Snack</label></li>
+          <li><label for=""><input type="radio" name="" id="">Teatime</label></li>
+        </ul>
+        <ul style="list-style-type: none;">
+          <div>Diet</div> 
+          <li><label for=""><input type="radio" name="" id="">Balanced</label></li>
+          <li><label for=""><input type="radio" name="" id="">High-Fiber</label></li>
+          <li><label for=""><input type="radio" name="" id="">High-Protein</label></li>
+          <li><label for=""><input type="radio" name="" id="">Low-Carb</label></li>
+          <li><label for=""><input type="radio" name="" id="">Low-Fat</label></li>
+          <li><label for=""><input type="radio" name="" id="">Low-Sodium</label></li>
+        </ul>
+    
+          <ul style="list-style-type: none;">
+            <div>Dietary restrictions</div> 
+            <li><label for=""><input type="checkbox" name="" id="">Balanced</label></li>
+            <li><label for=""><input type="checkbox" name="" id="">High-Fiber</label></li>
+            <li><label for=""><input type="checkbox" name="" id="">High-Protein</label></li>
+            <li><label for=""><input type="checkbox" name="" id="">Low-Carb</label></li>
+            <li><label for=""><input type="checkbox" name="" id="">Low-Fat</label></li>
+            <li><label for=""><input type="checkbox" name="" id="">Low-Sodium</label></li>
+            <li><label for=""><input type="checkbox" name="" id="">Eggs</label></li>
+            <li><label for=""><input type="checkbox" name="" id="">Fish</label></li>
+            <li><label for=""><input type="checkbox" name="" id="">FODMAP</label></li>
+            <li><label for=""><input type="checkbox" name="" id="">Gluten</label></li>
+            <li><label for=""><input type="checkbox" name="" id="">Keto</label></li>
+            <li><label for=""><input type="checkbox" name="" id="">Kidney friendly</label></li>
+            <li><label for=""><input type="checkbox" name="" id="">Lupine-free</label></li>
+            <li><label for=""><input type="checkbox" name="" id="">Kosher</label></li>
+            <li><label for=""><input type="checkbox" name="" id="">Low potassium</label></li>
+            <li><label for=""><input type="checkbox" name="" id="">Mustard-free</label></li>
+            <li><label for=""><input type="checkbox" name="" id="">No oil added</label></li>
+            <li><label for=""><input type="checkbox" name="" id="">No-sugar</label></li> 
+            <li><label for=""><input type="checkbox" name="" id="">Paleo</label></li>  
+            <li><label for=""><input type="checkbox" name="" id="">Peanuts</label></li>  
+            <li><label for=""><input type="checkbox" name="" id="">Pescatarian</label></li>
+            <li><label for=""><input type="checkbox" name="" id="">Pork-free</label></li>
+            <li><label for=""><input type="checkbox" name="" id="">Red meat-free</label></li>
+            <li><label for=""><input type="checkbox" name="" id="">Sesame-free</label></li>
+            <li><label for=""><input type="checkbox" name="" id="">Shellfish</label></li>       
+          </ul>
+    </div>
+
+    <div class="main">
+        
+        <div class="container">
+            <div class="row">
+                <h2> Find recipes at the click of a button</h2>
+            </div>
+            
+            <div class="row">
+              <label for="searchkey"><input style="border-radius: 15px;"  type="text" name="searchkey" id="searchkey"  placeholder="   Search here..." size="40"></label><i class="fa fa-search" aria-hidden="true" onclick="searchInit()"></i>
+            </div>
+            
+            <div class="row">
+              <b>Filters by</b>
+            </div>
+
+            <div class="row ">
+              <div class="col-3 ">
+                <a class="btn btn-light" data-toggle="collapse" href="#collapseMeal" role="button" aria-expanded="false" aria-controls="collapseMeal">
+                  Meal (Choose One)
+                </a>
+                <div class="collapse" id="collapseMeal">
+                  <div class="card card-body">
+                   <ul style="list-style-type: none;">
+                     <li> <a href="#" class="btn btn-secondary" style="margin: 5px;" name="" onclick="update(event)" >Breakfast</a></li>
+                     <li> <a href="#" class="btn btn-secondary" style="margin: 5px;" name="" onclick="update(event)" >Lunch</a></li>
+                     <li> <a href="#" class="btn btn-secondary" style="margin: 5px;" name="" onclick="update(event)" >Dinner</a></li>
+                     <li> <a href="#" class="btn btn-secondary" style="margin: 5px;" name="" onclick="update(event)" >Snack</a></li>
+                     <li> <a href="#" class="btn btn-secondary" style="margin: 5px;" name="" onclick="update(event)" >Teatime</a></li>	
+                   </ul>
+                  </div>
+                </div>
+               </div> 
+               
+              <div class="col-3">
+               <a class="btn btn-light" data-toggle="collapse" href="#collapseDiet" role="button" aria-expanded="false" aria-controls="collapseDiet">
+                Diet (Choose One)
+              </a>
+              <div class="collapse" id="collapseDiet">
+                <div class="card card-body">
+                 <ul style="list-style-type: none;">
+                   <li><input type="checkbox" name="" id=""> <label for="">Balanced</label></li>
+                   <li><input type="checkbox" name="" id=""> <label for="">High-Fiber</label></li>
+                   <li><input type="checkbox" name="" id=""> <label for="">High-Protein</label></li>
+                   <li><input type="checkbox" name="" id=""> <label for="">Low-Carb</label></li>
+                   <li><input type="checkbox" name="" id=""> <label for="">Low-Fat</label></li>	
+                   <li><input type="checkbox" name="" id=""> <label for="">Low-Sodium</label></li>	
+                 </ul>
+                </div>
+              </div>
+              </div>
+              <div class="col-4">
+                <a class="btn btn-light" data-toggle="collapse" href="#collapseDietRest" role="button" aria-expanded="false" aria-controls="collapseDietRest">
+                  Dietary restrictions (None/One/Many)
+                </a>
+                <div class="collapse" id="collapseDietRest">
+                  <div class="card card-body">
+                   <ul style="list-style-type: none;">
+                     <li><input type="checkbox" name="" id=""> <label for="">Balanced</label></li>
+                     <li><input type="checkbox" name="" id=""> <label for="">High-Fiber</label></li>
+                     <li><input type="checkbox" name="" id=""> <label for="">High-Protein</label></li>
+                     <li><input type="checkbox" name="" id=""> <label for="">Low-Carb</label></li>
+                     <li><input type="checkbox" name="" id=""> <label for="">Low-Fat</label></li>	
+                     <li><input type="checkbox" name="" id=""> <label for="">Low-Sodium</label></li>
+                     <li><input type="checkbox" name="" id=""> <label for="">Alcohol-free</label></li>	
+                     <li><input type="checkbox" name="" id=""> <label for="">Immune-Supportive</label></li>
+                     <li><input type="checkbox" name="" id=""> <label for="">Celery-free</label></li>	
+                     <li><input type="checkbox" name="" id=""> <label for="">Crustcean-free</label></li>	
+                     <li><input type="checkbox" name="" id=""> <label for="">Dairy</label></li>	
+                     <li><input type="checkbox" name="" id=""> <label for="">Eggs</label></li>	
+                     <li><input type="checkbox" name="" id=""> <label for="">Fish</label></li>	
+                     <li><input type="checkbox" name="" id=""> <label for="">FODMAP</label></li>	
+                     <li><input type="checkbox" name="" id=""> <label for="">Gluten</label></li>	
+                     <li><input type="checkbox" name="" id=""> <label for="">Keto</label></li>	
+                     <li><input type="checkbox" name="" id=""> <label for="">Kidney friendly</label></li>		
+                     <li><input type="checkbox" name="" id=""> <label for="">Kosher</label></li>
+                     <li><input type="checkbox" name="" id=""> <label for="">Low potassium</label></li>
+                     <li><input type="checkbox" name="" id=""> <label for="">Lupine-free</label></li>
+                     <li><input type="checkbox" name="" id=""> <label for="">Mustard-free</label></li>
+                     <li><input type="checkbox" name="" id=""> <label for="">No oil added</label></li>
+                     <li><input type="checkbox" name="" id=""> <label for="">No-sugar</label></li>
+                     <li><input type="checkbox" name="" id=""> <label for="">Paleo</label></li>
+                     <li><input type="checkbox" name="" id=""> <label for="">Peanuts</label></li>
+                     <li><input type="checkbox" name="" id=""> <label for="">Pescatarian</label></li>
+                     <li><input type="checkbox" name="" id=""> <label for="">Pork-free</label></li>
+                     <li><input type="checkbox" name="" id=""> <label for="">Red meat-free</label></li>
+                     <li><input type="checkbox" name="" id=""> <label for="">Sesame-free</label></li>
+                     <li><input type="checkbox" name="" id=""> <label for="">Shellfish</label></li>
+                   </ul>
+                  </div>
+                </div>
+                </div>
+                <div class="col-3">
+                  <a class="btn btn-light" data-toggle="collapse" href="#collapseCuisine" role="button" aria-expanded="false" aria-controls="collapseCuisine">
+                    Cuisine Type (None/One/Many)
+                  </a>
+                  <div class="collapse" id="collapseCuisine">
+                    <div class="card card-body">
+                     <ul style="list-style-type: none;">
+                       <li><input type="checkbox" name="" id=""> <label for="">Alcohol-cocktail</label></li>
+                       <li><input type="checkbox" name="" id=""> <label for="">Biscuits and cookies</label></li>
+                       <li><input type="checkbox" name="" id=""> <label for="">Bread</label></li>
+                       <li><input type="checkbox" name="" id=""> <label for="">Cereals</label></li>
+                       <li><input type="checkbox" name="" id=""> <label for="">Condiments and sauces</label></li>	
+                       <li><input type="checkbox" name="" id=""> <label for="">Drinks</label></li>	
+                       <li><input type="checkbox" name="" id=""> <label for="">Desserts</label></li>
+                       <li><input type="checkbox" name="" id=""> <label for="">Egg</label></li>	
+                       <li><input type="checkbox" name="" id=""> <label for="">Main course</label></li>	
+                       <li><input type="checkbox" name="" id=""> <label for="">Omelet</label></li>	
+                       <li><input type="checkbox" name="" id=""> <label for="">Pancake</label></li>	
+                       <li><input type="checkbox" name="" id=""> <label for="">Preps</label></li>	
+                       <li><input type="checkbox" name="" id=""> <label for="">Preserve</label></li>	
+                       <li><input type="checkbox" name="" id=""> <label for="">Salad</label></li>	
+                       <li><input type="checkbox" name="" id=""> <label for="">Sandwiches</label></li>	
+                       <li><input type="checkbox" name="" id=""> <label for="">Soup</label></li>	
+                       <li><input type="checkbox" name="" id=""> <label for="">Starter</label></li>	
+                     </ul>
+                    </div>
+                  </div>
+                 </div>
+                <div class="col-5">
+                  <a class="btn btn-light" data-toggle="collapse" href="#collapseDish" role="button" aria-expanded="false" aria-controls="collapseDish">
+                    Dish Type (None/One/Many)
+                  </a>
+                  <div class="collapse" id="collapseDish">
+                    <div class="card card-body">
+                     <ul style="list-style-type: none;">
+                       <li><input type="checkbox" value="Alcohol-cocktail" id="dishtype"> <label for="dishtype">Alcohol-cocktail</label></li>
+                       <li><input type="checkbox" value="" id="dishtype"> <label for="dishtype">Biscuits and cookies</label></li>
+                       <li><input type="checkbox" value="" id="dishtype"> <label for="dishtype">Bread</label></li>
+                       <li><input type="checkbox" value="" id="dishtype"> <label for="dishtype">Cereals</label></li>
+                       <li><input type="checkbox" value="" id="dishtype"> <label for="dishtype">Condiments and sauces</label></li>	
+                       <li><input type="checkbox" value="" id="dishtype"> <label for="dishtype">Drinks</label></li>	
+                       <li><input type="checkbox" value="" id="dishtype"> <label for="dishtype">Desserts</label></li>
+                       <li><input type="checkbox" value="" id="dishtype"> <label for="dishtype">Egg</label></li>	
+                       <li><input type="checkbox" value="" id="dishtype"> <label for="dishtype">Main course</label></li>	
+                       <li><input type="checkbox" value="" id="dishtype"> <label for="dishtype">Omelet</label></li>	
+                       <li><input type="checkbox" value="" id="dishtype"> <label for="dishtype">Pancake</label></li>	
+                       <li><input type="checkbox" value="" id="dishtype"> <label for="dishtype">Preps</label></li>	
+                       <li><input type="checkbox" value="" id="dishtype"> <label for="dishtype">Preserve</label></li>	
+                       <li><input type="checkbox" value="" id="dishtype"> <label for="dishtype">Salad</label></li>	
+                       <li><input type="checkbox" value="" id="dishtype"> <label for="dishtype">Sandwiches</label></li>	
+                       <li><input type="checkbox" value="" id="dishtype"> <label for="dishtype">Soup</label></li>	
+                       <li><input type="checkbox" value="" id="dishtype"> <label for="dishtype">Starter</label></li>	
+                     </ul>
+                    </div>
+                  </div>
+                 </div>
+                 
+              </div>
+              
+               
+            </div>
+        </div>
+      </div>  
+    
+
+    <script>
+     let arr=[false,false,false]
+     function update(event){
+      if(!arr[event.target.name])
+      {   
+          event.target.className="btn btn-success"
+          arr[event.target.name]=true
+          console.log(arr)
+        }
+      else{
+          event.target.className="btn btn-primary"
+          arr[event.target.name]=false
+          console.log(arr)
+        }
+        }
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      } 
+      </script>
+     
+    <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</body>
+</html>
+
